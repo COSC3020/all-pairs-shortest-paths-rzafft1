@@ -26,3 +26,5 @@ test code from other exercises.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+We have three nested for loops that will each iterate through every node in the graph. Worst case time complexity here would be $\Theta(V^3)$ where we need to iterate though every the possible node pair. 

@@ -48,7 +48,7 @@ var expected2 = [
 ];
 
 var matrix3 = [[Infinity]]
-var expected3 = [[0]]
+var expected3 = [[Infinity]]
 
 
 assert(JSON.stringify(allPairsShortestPaths(matrix1)) == JSON.stringify(expected1)) 

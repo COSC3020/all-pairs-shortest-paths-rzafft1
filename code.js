@@ -5,7 +5,7 @@ function allPairsShortestPaths(graph)
     
     for (let u = 0; u < dist.length; u++)
     {
-        if (dist[u].length == 1) dist[u][u] = Infinity
+        if (dist[u].length == 1) dist[u][u] = graph[u][u]
         else dist[u][u] = 0
         for (let v = 0; v < dist.length; v++)
         {

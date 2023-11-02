@@ -1,10 +1,12 @@
+
 function allPairsShortestPaths(graph) 
 {
     var dist = Array(graph.length).fill().map(() => Array(graph.length).fill(Infinity))
     
     for (let u = 0; u < dist.length; u++)
     {
-        dist[u][u] = 0
+        if (dist[u].length == 1) dist[u][u] = Infinity
+        else dist[u][u] = 0
         for (let v = 0; v < dist.length; v++)
         {
             if (graph[u][v] != Infinity)
